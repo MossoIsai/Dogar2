@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mossoveterinary.dogar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--android:launchMode="singleTop"
+       Animacion
+        Con esta permite poner el back nativo con efecto de retroceso
+       -->
+        <!--android:parentActivityName=".controller.activities.LoginViewController"
+         Actividad Padre de conocimiento
+        -->
+        <activity
+            android:name=".controller.activities.LoginViewController"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|stateUnchanged">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Actividades -->
+        <activity
+            android:name=".controller.activities.RegistrarViewController"
+            android:label="@string/app_registrar"
+            android:launchMode="singleTop"
+            android:parentActivityName=".controller.activities.LoginViewController"
+            android:theme="@style/AppTheme.NoActionBar_StatusBar" />
+        <!--android:launchMode="singleTop"
+        Animacion
+         Con esta permite poner el back nativo con efecto de retroceso
+        -->
+        <activity
+            android:name=".controller.activities.BaseViewController"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".controller.activities.DetalleViewController"
+            android:parentActivityName=".controller.activities.RegistrarViewController"
+            android:theme="@style/AppTheme.NoActionBarStatusBar_Transalucent"
+            android:label="@string/app_detalle"/>
+
+        <activity
+            android:name=".controller.activities.OlvidarContrasenaViewController"
+            android:label="@string/app_olvidar_password"
+            android:parentActivityName=".controller.activities.LoginViewController"
+            android:theme="@style/AppTheme.NoActionBar_StatusBar" />
+
+    </application>
+
+</manifest>
