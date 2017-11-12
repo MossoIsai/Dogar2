@@ -3,6 +3,20 @@
     <string name="app_registrar">Registrar</string>
     <string name="app_olvidar_password">¿Olvidaste tu contraseña?</string>
     <string name="app_detalle">Detalle</string>
+    <string name="app_hint_ingresa_correo">Ingresa tu correo electrónico</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <string name="large_text">
         "Material is the metaphor."
         "\n\nA material metaphor is the unifying theory of a rationalized space and a system of motion."
